@@ -29,18 +29,18 @@ namespace TicTacToe
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             turn = true;
-            turnCount = 0;
-
-            try
+            turnCount = 0;           
+            foreach (var cont in Controls)
             {
-                foreach (var cont in Controls)
+                try
                 {
                     Button b = (Button)cont;
                     b.Enabled = true;
                     b.Text = "";
                 }
+                catch { } // skipping exception when labels can`t be casted to Button
             }
-            catch { }
+            
         }
 
         private void buttonClick(object sender, EventArgs e)
@@ -82,16 +82,33 @@ namespace TicTacToe
             else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && (!A3.Enabled))
                 thereIsAWinner = true;
 
-            var winner = turn ? "X" : "O";
+            //var winner = turn ? "X" : "O";
 
             if (thereIsAWinner)
             {
                 DisableAll();
+                var winner = "";
+                if (turn)
+                {
+                    winner = "X";
+                    xWinCount.Text = (int.Parse(xWinCount.Text) + 1).ToString();
+                }
+                else
+                {
+                    winner = "O";
+                    oWinCount.Text = (int.Parse(oWinCount.Text) + 1).ToString();
+                }
                 MessageBox.Show($"{winner} wins");
+
             }
             else
+            {
                 if (turnCount == 9)
-                MessageBox.Show("Draw!");
+                {
+                    MessageBox.Show("Draw!");
+                    drawCount.Text = (int.Parse(drawCount.Text) + 1).ToString();
+                }
+            }
         }
 
         private void DisableAll() // disable all buttons on form so the game stops
@@ -110,6 +127,32 @@ namespace TicTacToe
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Created by Max Khamrovskyi", "Tic Tac Toe About");
+        }
+
+        private void ButtonEnter(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Enabled)
+            {
+                if (turn)
+                    b.Text = "X";
+                else
+                    b.Text = "O";
+            }
+        }
+
+        private void ButtonLeave(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Enabled)
+                b.Text = "";
+        }
+
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            xWinCount.Text = "0";
+            oWinCount.Text = "0";
+            drawCount.Text = "0";
         }
     }
 }

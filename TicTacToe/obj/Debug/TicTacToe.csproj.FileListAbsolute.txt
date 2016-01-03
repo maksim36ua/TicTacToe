@@ -7,3 +7,12 @@ c:\users\maksi\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\obj\Deb
 c:\users\maksi\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
 c:\users\maksi\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 c:\users\maksi\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.TicTacToe.resources
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
