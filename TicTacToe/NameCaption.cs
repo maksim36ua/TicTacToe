@@ -22,5 +22,17 @@ namespace TicTacToe
             TicTacToe.setPlayersNames(name1: p1.Text, name2: p2.Text);
             this.Close();
         }
+
+        private void p1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar.ToString() == "\r")
+                button1.PerformClick();
+        }
+
+        private void p2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar.ToString() == "\r")
+                button1.PerformClick();
+        }
     }
 }
