@@ -13,13 +13,19 @@ namespace TicTacToe
     public partial class TicTacToe : Form
     {
         bool turn = true; // true = X turn, false = O turn
-        int turnCount = 0; 
+        int turnCount = 0;
+        static string player1, player2;
 
         public TicTacToe()
         {
             InitializeComponent();
         }
 
+        public static void setPlayersNames(string name1, string name2)
+        {
+            player1 = name1;
+            player2 = name2;
+        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -90,12 +96,12 @@ namespace TicTacToe
                 var winner = "";
                 if (turn)
                 {
-                    winner = "X";
+                    winner = player1;
                     xWinCount.Text = (int.Parse(xWinCount.Text) + 1).ToString();
                 }
                 else
                 {
-                    winner = "O";
+                    winner = player2;
                     oWinCount.Text = (int.Parse(oWinCount.Text) + 1).ToString();
                 }
                 MessageBox.Show($"{winner} wins");
@@ -159,6 +165,8 @@ namespace TicTacToe
         {
             NameCaption form2 = new NameCaption();
             form2.ShowDialog();
+            label1.Text = player1;
+            label3.Text = player2;
         }
     }
 }

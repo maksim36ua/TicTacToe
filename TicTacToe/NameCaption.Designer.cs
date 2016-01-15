@@ -79,6 +79,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Play";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // NameCaption
             // 
@@ -90,8 +91,13 @@
             this.Controls.Add(this.p1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(531, 286);
+            this.MinimumSize = new System.Drawing.Size(531, 286);
             this.Name = "NameCaption";
-            this.Text = "NameCaption";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tic Tac Toe";
             this.ResumeLayout(false);
             this.PerformLayout();
 

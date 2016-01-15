@@ -16,5 +16,11 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TicTacToe.setPlayersNames(name1: p1.Text, name2: p2.Text);
+            this.Close();
+        }
     }
 }
