@@ -154,5 +154,11 @@ namespace TicTacToe
             oWinCount.Text = "0";
             drawCount.Text = "0";
         }
+
+        private void TicTacToe_Load(object sender, EventArgs e)
+        {
+            NameCaption form2 = new NameCaption();
+            form2.ShowDialog();
+        }
     }
 }

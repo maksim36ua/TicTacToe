@@ -16,3 +16,4 @@ C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojRe
 C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.TicTacToe.resources
 C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
 C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
+C:\Users\maksi\Documents\GitHub\TicTacToe\TicTacToe\obj\Debug\TicTacToe.NameCaption.resources
