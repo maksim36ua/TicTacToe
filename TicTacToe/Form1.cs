@@ -96,7 +96,17 @@ namespace TicTacToe
                 }//end if
             }//end if
 
-            move.PerformClick();
+            bool isAvailableButton = false;
+            Button b = null;
+            foreach (Control c in Controls)
+            {
+                b = c as Button;
+                if (b != null && (b.Text == ""))
+                    isAvailableButton = true;
+            }
+            
+            if(isAvailableButton )
+                move.PerformClick();
         }
 
         private Button look_for_open_space()
