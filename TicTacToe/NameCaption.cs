@@ -34,5 +34,14 @@ namespace TicTacToe
             if (e.KeyChar.ToString() == "\r")
                 button1.PerformClick();
         }
+
+        private void p2_TextChanged(object sender, EventArgs e)
+        {
+            if (p2.Text.ToUpper() == "COMPUTER")
+                TicTacToe.AgainstComputer = true;
+            else
+                TicTacToe.AgainstComputer = false;
+
+        }
     }
 }
